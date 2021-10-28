@@ -163,6 +163,9 @@
         column-gap: 2rem;
         overflow: hidden;
     }
+    .titulo {
+        text-align: left;
+    }
     .content::before {
         display: none;
     }
@@ -178,7 +181,6 @@
         align-items: center;
         justify-content: center;
     }
-
     .image {
         background: url(images/illustration-woman-online-desktop.svg) no-repeat center center / contain;
         position: absolute;
@@ -186,7 +188,6 @@
         width: 400px;
         height: 300px;
     }
-
     .container::before {
         content: "";
         background: url(images/illustration-box-desktop.svg)no-repeat center center / contain;
@@ -198,15 +199,14 @@
         top: 243px;
         animation: moveUp 3s infinite;
     }
-
     @keyframes moveUp {
-        0%{
+        0% {
             top: 243px;
         }
-        50%{
+        50% {
             top: 233px;
         }
-        100%{
+        100% {
             top: 243px;
         }
     }
