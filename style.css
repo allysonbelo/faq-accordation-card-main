@@ -21,7 +21,6 @@
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     background: linear-gradient(var(--color-soft-violet), var(--color-soft-blue)) no-repeat;
-    height: 100vh;
     padding: 0 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -29,13 +28,13 @@
     justify-content: center;
     position: relative;
     margin-top: 6rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     margin-right: auto;
     margin-left: auto;
+    
     width: 100%;
     max-width: 778px;
     min-width: 300px;
-    height: 100vh;
 }
 
 .content::before {
@@ -137,6 +136,7 @@
     font-size: 11px;
     text-align: center;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .attribution a {
