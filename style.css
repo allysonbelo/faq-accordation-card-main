@@ -163,9 +163,11 @@
         column-gap: 2rem;
         overflow: hidden;
     }
-    .titulo {
+
+    .title{
         text-align: left;
     }
+    
     .content::before {
         display: none;
     }
