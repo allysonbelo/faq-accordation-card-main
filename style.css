@@ -28,7 +28,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 8rem auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
     width: 100%;
     max-width: 778px;
     min-width: 375px;
@@ -51,7 +54,7 @@
     background-color: white;
     border-radius: 15px;
     padding: 0 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     min-width: 100px;
     max-width: 778px;
     margin: 0 auto;
@@ -74,6 +77,7 @@
 }
 
 /* function */
+
 .content__question.active .question {
     font-weight: bold;
     transition: font-weight 1s ease;
@@ -115,9 +119,10 @@
 }
 
 /* function */
+
 .content__question.active .answer {
     max-height: 300px;
-    animation:  fade 1s ease-in-out;
+    animation: fade 1s ease-in-out;
 }
 
 .content__question.active .fa-chevron-down {
@@ -131,13 +136,11 @@
 .attribution {
     font-size: 11px;
     text-align: center;
-    align-self: flex-end;
     width: 100%;
-    margin-top: 2rem;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
 }
 
 @keyframes fade {
@@ -148,5 +151,63 @@
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        column-gap: 2rem;
+        overflow: hidden;
+    }
+    .content::before {
+        display: none;
+    }
+    .content__desktop {
+        width: 50%;
+    }
+    .image__wrapper {
+        width: 50%;
+        height: 300px;
+        position: relative;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image {
+        background: url(images/illustration-woman-online-desktop.svg) no-repeat center center / contain;
+        position: absolute;
+        left: -100px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .container::before {
+        content: "";
+        background: url(images/illustration-box-desktop.svg)no-repeat center center / contain;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: -48px;
+        z-index: 1;
+        top: 263px;
+        animation: moveUp 3s infinite;
+    }
+
+    @keyframes moveUp {
+        0%{
+            top: 263px;
+        }
+        50%{
+            top: 253px;
+        }
+        100%{
+            top: 263px;
+        }
     }
 }
