@@ -195,19 +195,19 @@
         position: absolute;
         left: -48px;
         z-index: 1;
-        top: 263px;
+        top: 243px;
         animation: moveUp 3s infinite;
     }
 
     @keyframes moveUp {
         0%{
-            top: 263px;
+            top: 243px;
         }
         50%{
-            top: 253px;
+            top: 233px;
         }
         100%{
-            top: 263px;
+            top: 243px;
         }
     }
 }
